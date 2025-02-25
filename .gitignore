@@ -16,3 +16,5 @@ __pycache__/
 *.exe
 *.txt
 ClasedePython*.*
+# Ignorar carpeta de apuntes
+Curso
