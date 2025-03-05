@@ -15,6 +15,6 @@ __pycache__/
 *.odt
 *.exe
 *.txt
-ClasedePython*.*
+# ClasedePython*.*
 # Ignorar carpeta de apuntes
 Curso
