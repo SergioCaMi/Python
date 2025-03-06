@@ -1,9 +1,16 @@
-#Practica 15: Crear una función que me pasandole como parametro un numero, mediante la función input, y que me devuelva el mes en letras correspondiente (cuidado si el numero no esta entre 1 y 12)
-meses=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre']
-def mes(numero):
-    if numero>0 and numero<=12:
-        print("El mes escogido es el", meses[numero-1])
+#Practica 18: Crear una función para que pasandole por separado, el dia, el mes y el año nos devuelva un texto que ponga "la diferencia de dias entre hoy y la fecha informada yyyy/mm/dd es de X dias", siempre y cuando la fecha informada sea mas antigua que hoy
+from datetime import date
+def diferenciadias(dia, mes, ano):
+    fecha1 = date(ano, mes, dia)
+    fecha2 = date.today()
+    if fecha2<fecha1:
+        print("la fecha aportada debe ser anterior a hoy")
     else:
-        print("Error en el numero de mes.")
+        print(fecha1, "-", fecha2)
+        dias = fecha2 - fecha1
+        print("Han pasado",(fecha2 - fecha1).days, "dias.")
 
-mes(int(input("Introduce el numero de un mes en números:")))
+dia = int(input("Introduce un día del año: "))
+mes = int(input("Introduce un mes del año: "))
+ano = int(input("Introduce un año: "))
+diferenciadias(dia, mes, ano)

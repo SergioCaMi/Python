@@ -1,9 +1,10 @@
-#Practica 15: Crear una función que me pasandole como parametro un numero, mediante la función input, y que me devuelva el mes en letras correspondiente (cuidado si el numero no esta entre 1 y 12)
-meses=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre']
-def mes(numero):
-    if numero>0 and numero<=12:
-        print("El mes escogido es el", meses[numero-1])
+#Practica 16: Crear una función que compare dos numeros (a y b) y me devuelva los 3 posibles resultados en un texto, "el numero a es mayor que b", "el numero b es mayor que a"
+def comparar(a,b):
+    if a>b:
+        print("El numero a es mayor que b", a, ">", b)
+    elif a<b:
+         print("El numero b es mayor que a", b, ">", a)
     else:
-        print("Error en el numero de mes.")
+        print("El numero a y el numero b son iguales", b, "=", a)
 
-mes(int(input("Introduce el numero de un mes en números:")))
+comparar(float(input("Dime un numero:")),float(input("Dime otro numero:")))
