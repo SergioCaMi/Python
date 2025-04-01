@@ -15,7 +15,7 @@ __pycache__/
 *.odt
 *.exe
 *.txt
-# ClasedePython*.*
+ClasedePython*.*
 # Ignorar carpeta de apuntes
 Curso
 Ciencia-de-datos-Python-Institute-PCED-30-Ed1
