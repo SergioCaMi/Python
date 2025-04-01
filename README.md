@@ -1,1 +1,1 @@
-Ejercicios 1
+Practicas con Jupyter Notebook y Python
